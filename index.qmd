@@ -1,0 +1,77 @@
+---
+title: "Statistics for Psychologists"
+page-layout: full
+anchor-sections: false
+image: "Images/icon.png"
+css: index.css
+filters: [remove_title.lua]
+sidebar: false
+back-to-top-navigation: false
+---
+
+![](Images/LUPsychology.svg){fig-alt="University Logo" fig-align="center"}
+
+::: callout-warning
+**This website is under construction.**
+:::
+
+```{r}
+#| echo: false
+
+#this will automate the current year content so it doesn't need manual changing each year
+date <- as.numeric(format(Sys.time(), "%Y"))
+```
+
+::: {.div style="font-size:2em;"}
+Welcome
+:::
+
+Welcome to Lancaster University's Department of Psychology **`r date-1`/`r date`** modules on Statistics for Psychologists. This is your one-stop shop for all the lab materials you need for working with R and statistics.
+
+```{=html}
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+
+    <a href="https://m1v0.github.io/year_1/">
+      <button type="button" class="btn btn-landing btn-lg">Year 1</button>
+    </a>
+    <a href="https://m1v0.github.io/year_1/">
+      <button type="button" class="btn btn-landing btn-lg">MSc</button>
+    </a>
+    
+    </div>
+    <div class="col">
+    
+    <a href="https://m1v0.github.io/year_1/">
+      <button type="button" class="btn btn-landing btn-lg">Year 2</button>
+    </a>
+    <a href="https://m1v0.github.io/year_1/">
+      <button type="button" class="btn btn-landing btn-lg">More</button>
+    </a>
+    
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+
+
+<div class="container" style="text-align:center;">
+    <a href="https://m1v0.github.io/year_1/" style="text-decoration:none">
+      <button type="button" style="width: 20%" class="btn btn-landing btn-lg">Year 1</button>
+    </a>
+    <a href="https://m1v0.github.io/year_1/" style="text-decoration:none">
+      <button type="button" style="width: 20%" class="btn btn-landing btn-lg">Year 2</button>
+    </a>
+    <a href="https://m1v0.github.io/year_1/" style="text-decoration:none">
+      <button type="button" style="width: 20%" class="btn btn-landing btn-lg">MSc</button>
+    </a>
+    <a href="https://m1v0.github.io/year_1/" style="text-decoration:none">
+      <button type="button" style="width: 20%" class="btn btn-landing btn-lg">More</button>
+    </a>
+</div>
+
+```
