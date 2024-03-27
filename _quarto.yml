@@ -23,7 +23,7 @@ website:
       - text: Year 2
         file: year2/index.html
       - text: MSc
-        file: msc/index.html
+        file: MSc/index.html
       - text: And More...
         file: more/index.qmd
 
@@ -31,7 +31,7 @@ website:
     left: "Website developed by Matthew Ivory"
     right:       
       - text: "Previous Content"
-        href: Previous/index.html
+        href: previous-content/index.html
 
 format:
   html:
