@@ -14,6 +14,13 @@
     "text": "Command\nDescription\nWeek(s)\n\n\n\n\nfilter()\nFilter rows based on a condition\npsyc121/week2\n\n\nmutate()\nchoose which columns\npsyc122/week1"
   },
   {
+    "objectID": "temp/index.html",
+    "href": "temp/index.html",
+    "title": "Statistics for Psychologists",
+    "section": "",
+    "text": "Warning\n\n\n\nThis website is just for Matthew’s testing\n\n\n\n\nWarning: package 'collapsibleTree' was built under R version 4.2.3"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Statistics for Psychologists",
