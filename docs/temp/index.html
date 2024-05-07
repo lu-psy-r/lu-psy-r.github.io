@@ -20,17 +20,47 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
 <link href="../Images/favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -40,12 +70,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "textbox",
-  "limit": 20,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -77,11 +101,10 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="https://lu-psy-r.github.io/">
     <span class="navbar-title">Statistics for Psychologists</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
@@ -140,8 +163,46 @@ Warning
 <pre><code>Warning: package 'collapsibleTree' was built under R version 4.2.3</code></pre>
 </div>
 <div class="cell-output-display">
-<div id="htmlwidget-a7df09bf97a2632c6623" style="width:100%;height:464px;" class="collapsibleTree html-widget"></div>
-<script type="application/json" data-for="htmlwidget-a7df09bf97a2632c6623">{"x":{"data":{"name":"AI_Risk","children":[{"name":"Report","children":[{"name":"Factor 1","children":[{"name":"Low"}]},{"name":"Factor 2","children":[{"name":"High"}]}]},{"name":"Essay","children":[{"name":"Factor 2","children":[{"name":"High"}]},{"name":"Factor 1","children":[{"name":"Low"}]}]},{"name":"Interpretative Dance","children":[{"name":"Factor 1","children":[{"name":"Low"}]},{"name":"Factor 2","children":[{"name":"High"}]}]}]},"options":{"hierarchy":["Assignment Type","Content Complexity","Risk"],"input":null,"attribute":"leafCount","linkLength":null,"fontSize":10,"tooltip":false,"collapsed":true,"zoomable":true,"margin":{"top":20,"bottom":20,"left":60,"right":45},"fill":"lightsteelblue"}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-47acb82991fde0e8ebd5" style="width:100%;height:464px;" class="collapsibleTree html-widget"></div>
+<script type="application/json" data-for="htmlwidget-47acb82991fde0e8ebd5">{"x":{"data":{"name":"AI_Risk","children":[{"name":"Report","children":[{"name":"Factor 1","children":[{"name":"Low"}]},{"name":"Factor 2","children":[{"name":"High"}]}]},{"name":"Essay","children":[{"name":"Factor 2","children":[{"name":"High"}]},{"name":"Factor 1","children":[{"name":"Low"}]}]},{"name":"Interpretative Dance","children":[{"name":"Factor 1","children":[{"name":"Low"}]},{"name":"Factor 2","children":[{"name":"High"}]}]}]},"options":{"hierarchy":["Assignment Type","Content Complexity","Risk"],"input":null,"attribute":"leafCount","linkLength":null,"fontSize":10,"tooltip":false,"collapsed":true,"zoomable":true,"margin":{"top":20,"bottom":20,"left":60,"right":45},"fill":"lightsteelblue"}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a simple org chart</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>org <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="at">Manager =</span> <span class="fu">c</span>(</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="cn">NA</span>, <span class="st">"Ana"</span>, <span class="st">"Ana"</span>, <span class="st">"Bill"</span>, <span class="st">"Bill"</span>, <span class="st">"Bill"</span>, <span class="st">"Claudette"</span>, <span class="st">"Claudette"</span>, <span class="st">"Danny"</span>,</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="st">"Fred"</span>, <span class="st">"Fred"</span>, <span class="st">"Grace"</span>, <span class="st">"Larry"</span>, <span class="st">"Larry"</span>, <span class="st">"Nicholas"</span>, <span class="st">"Nicholas"</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>),</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="at">Employee =</span> <span class="fu">c</span>(</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="st">"Ana"</span>, <span class="st">"Bill"</span>, <span class="st">"Larry"</span>, <span class="st">"Claudette"</span>, <span class="st">"Danny"</span>, <span class="st">"Erika"</span>, <span class="st">"Fred"</span>, <span class="st">"Grace"</span>,</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="st">"Henri"</span>, <span class="st">"Ida"</span>, <span class="st">"Joaquin"</span>, <span class="st">"Kate"</span>, <span class="st">"Mindy"</span>, <span class="st">"Nicholas"</span>, <span class="st">"Odette"</span>, <span class="st">"Peter"</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>),</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="at">Title =</span> <span class="fu">c</span>(</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="st">"President"</span>, <span class="st">"VP Operations"</span>, <span class="st">"VP Finance"</span>, <span class="st">"Director"</span>, <span class="st">"Director"</span>, <span class="st">"Scientist"</span>,</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="st">"Manager"</span>, <span class="st">"Manager"</span>, <span class="st">"Jr Scientist"</span>, <span class="st">"Operator"</span>, <span class="st">"Operator"</span>, <span class="st">"Associate"</span>,</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="st">"Analyst"</span>, <span class="st">"Director"</span>, <span class="st">"Accountant"</span>, <span class="st">"Accountant"</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="fu">collapsibleTreeNetwork</span>(org, <span class="at">attribute =</span> <span class="st">"Title"</span>, <span class="at">fill =</span> <span class="st">"Color"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="htmlwidget-8f4145cfd363a04c0f0f" style="width:100%;height:464px;" class="collapsibleTree html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8f4145cfd363a04c0f0f">{"x":{"data":{"name":"Ana","WeightOfNode":"President","children":[{"name":"Bill","WeightOfNode":"VP Operations","children":[{"name":"Claudette","WeightOfNode":"Director","children":[{"name":"Fred","WeightOfNode":"Manager","children":[{"name":"Ida","WeightOfNode":"Operator"},{"name":"Joaquin","WeightOfNode":"Operator"}]},{"name":"Grace","WeightOfNode":"Manager","children":[{"name":"Kate","WeightOfNode":"Associate"}]}]},{"name":"Danny","WeightOfNode":"Director","children":[{"name":"Henri","WeightOfNode":"Jr Scientist"}]},{"name":"Erika","WeightOfNode":"Scientist"}]},{"name":"Larry","WeightOfNode":"VP Finance","children":[{"name":"Mindy","WeightOfNode":"Analyst"},{"name":"Nicholas","WeightOfNode":"Director","children":[{"name":"Odette","WeightOfNode":"Accountant"},{"name":"Peter","WeightOfNode":"Accountant"}]}]}]},"options":{"hierarchy":[1,2,3,4,5],"input":null,"attribute":"Title","linkLength":null,"fontSize":10,"tooltip":true,"collapsed":true,"zoomable":true,"margin":{"top":20,"bottom":20,"left":40,"right":60},"fill":"Color"}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Add in colors and sizes</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>org<span class="sc">$</span>Color <span class="ot">&lt;-</span> org<span class="sc">$</span>Title</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(org<span class="sc">$</span>Color) <span class="ot">&lt;-</span> colorspace<span class="sc">::</span><span class="fu">rainbow_hcl</span>(<span class="dv">11</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">collapsibleTreeNetwork</span>(</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>org,</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="at">attribute =</span> <span class="st">"Title"</span>,</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="at">fill =</span> <span class="st">"Color"</span>,</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="at">nodeSize =</span> <span class="st">"leafCount"</span>,</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="at">collapsed =</span> <span class="cn">FALSE</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="htmlwidget-144abfb82039dde63245" style="width:100%;height:464px;" class="collapsibleTree html-widget"></div>
+<script type="application/json" data-for="htmlwidget-144abfb82039dde63245">{"x":{"data":{"name":"Ana","fill":"President","SizeOfNode":14.05,"WeightOfNode":"President","children":[{"name":"Bill","fill":"VP Operations","SizeOfNode":11.11,"WeightOfNode":"VP Operations","children":[{"name":"Claudette","fill":"Director","SizeOfNode":8.6,"WeightOfNode":"Director","children":[{"name":"Fred","fill":"Manager","SizeOfNode":7.02,"WeightOfNode":"Manager","children":[{"name":"Ida","fill":"Operator","SizeOfNode":4.97,"WeightOfNode":"Operator"},{"name":"Joaquin","fill":"Operator","SizeOfNode":4.97,"WeightOfNode":"Operator"}]},{"name":"Grace","fill":"Manager","SizeOfNode":4.97,"WeightOfNode":"Manager","children":[{"name":"Kate","fill":"Associate","SizeOfNode":4.97,"WeightOfNode":"Associate"}]}]},{"name":"Danny","fill":"Director","SizeOfNode":4.97,"WeightOfNode":"Director","children":[{"name":"Henri","fill":"Jr Scientist","SizeOfNode":4.97,"WeightOfNode":"Jr Scientist"}]},{"name":"Erika","fill":"Scientist","SizeOfNode":4.97,"WeightOfNode":"Scientist"}]},{"name":"Larry","fill":"VP Finance","SizeOfNode":8.6,"WeightOfNode":"VP Finance","children":[{"name":"Mindy","fill":"Analyst","SizeOfNode":4.97,"WeightOfNode":"Analyst"},{"name":"Nicholas","fill":"Director","SizeOfNode":7.02,"WeightOfNode":"Director","children":[{"name":"Odette","fill":"Accountant","SizeOfNode":4.97,"WeightOfNode":"Accountant"},{"name":"Peter","fill":"Accountant","SizeOfNode":4.97,"WeightOfNode":"Accountant"}]}]}]},"options":{"hierarchy":[1,2,3,4,5],"input":null,"attribute":"Title","linkLength":null,"fontSize":10,"tooltip":true,"collapsed":false,"zoomable":true,"margin":{"top":20,"bottom":20,"left":44.05,"right":60}}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 

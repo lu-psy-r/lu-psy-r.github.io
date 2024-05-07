@@ -18,13 +18,13 @@
     "href": "temp/index.html",
     "title": "Statistics for Psychologists",
     "section": "",
-    "text": "Warning\n\n\n\nThis website is just for Matthew’s testing\n\n\n\n\nWarning: package 'collapsibleTree' was built under R version 4.2.3"
+    "text": "Warning\n\n\n\nThis website is just for Matthew’s testing\n\n\n\n\nWarning: package 'collapsibleTree' was built under R version 4.2.3\n\n\n\n\n\n\n\n# Create a simple org chart\norg &lt;- data.frame(\nManager = c(\nNA, \"Ana\", \"Ana\", \"Bill\", \"Bill\", \"Bill\", \"Claudette\", \"Claudette\", \"Danny\",\n\"Fred\", \"Fred\", \"Grace\", \"Larry\", \"Larry\", \"Nicholas\", \"Nicholas\"\n),\nEmployee = c(\n\"Ana\", \"Bill\", \"Larry\", \"Claudette\", \"Danny\", \"Erika\", \"Fred\", \"Grace\",\n\"Henri\", \"Ida\", \"Joaquin\", \"Kate\", \"Mindy\", \"Nicholas\", \"Odette\", \"Peter\"\n),\nTitle = c(\n\"President\", \"VP Operations\", \"VP Finance\", \"Director\", \"Director\", \"Scientist\",\n\"Manager\", \"Manager\", \"Jr Scientist\", \"Operator\", \"Operator\", \"Associate\",\n\"Analyst\", \"Director\", \"Accountant\", \"Accountant\"\n)\n)\n\ncollapsibleTreeNetwork(org, attribute = \"Title\", fill = \"Color\")\n\n\n\n\n# Add in colors and sizes\norg$Color &lt;- org$Title\nlevels(org$Color) &lt;- colorspace::rainbow_hcl(11)\ncollapsibleTreeNetwork(\norg,\nattribute = \"Title\",\nfill = \"Color\",\nnodeSize = \"leafCount\",\ncollapsed = FALSE\n)"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Statistics for Psychologists",
     "section": "",
-    "text": "Warning\n\n\n\nThis website is under construction.\n\n\n\n\n\n\n\n\nWelcome\n\nWelcome to Lancaster University’s Department of Psychology 2023/2024 modules on Statistics for Psychologists. This is your one-stop shop for all the lab materials you need for working with R and statistics.\n\n\n  \n    \n\n    \n      Year 1\n    \n    \n      MSc\n    \n    \n    \n    \n    \n    \n      Year 2\n    \n    \n      More"
+    "text": "Warning\n\n\n\nThis website is under construction.\n\n\n\n\n\n\n\n\nWelcome\n\nWelcome to Lancaster University’s Department of Psychology 2023/2024 modules on Statistics for Psychologists. This is your one-stop shop for all the lab materials you need for working with R and statistics.\n\n\n  \n    \n\n    \n      Year 1\n    \n    \n      Year 3\n    \n    \n    \n    \n    \n    \n      Year 2\n    \n    \n      MSc\n    \n    \n    \n  \n  \n    \n      More"
   }
 ]

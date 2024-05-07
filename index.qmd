@@ -36,8 +36,8 @@ Welcome to Lancaster University's Department of Psychology **`r date-1`/`r date`
     <a href="year1/">
       <button type="button" class="btn btn-landing btn-lg">Year 1</button>
     </a>
-    <a href="MSc/">
-      <button type="button" class="btn btn-landing btn-lg">MSc</button>
+    <a href="year3/">
+      <button type="button" class="btn btn-landing btn-lg">Year 3</button>
     </a>
     
     </div>
@@ -46,11 +46,16 @@ Welcome to Lancaster University's Department of Psychology **`r date-1`/`r date`
     <a href="year2/">
       <button type="button" class="btn btn-landing btn-lg">Year 2</button>
     </a>
-    <a href="more/">
-      <button type="button" class="btn btn-landing btn-lg">More</button>
+    <a href="MSc/">
+      <button type="button" class="btn btn-landing btn-lg">MSc</button>
     </a>
     
     </div>
+  </div>
+  <div class="row" style="text-align:center;">
+    <div><a href="more/">
+      <button type="button" class="btn btn-landing btn-lg" style="width: 50%">More</button>
+    </a></div>
   </div>
 </div>
 
