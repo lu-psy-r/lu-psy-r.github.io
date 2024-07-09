@@ -22,6 +22,8 @@ website:
         file: year1/index.html
       - text: Year 2
         file: year2/index.html
+      - text: Year 3
+        file: year3/index.html
       - text: MSc
         file: MSc/index.html
       - text: And More...

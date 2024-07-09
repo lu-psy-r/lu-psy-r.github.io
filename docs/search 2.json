@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "more/index.html",
+    "href": "more/index.html",
+    "title": "Additional Content",
+    "section": "",
+    "text": "Command\nDescription\nWeek(s)\n\n\n\n\nfilter()\nFilter rows based on a condition\npsyc121/week2\n\n\nmutate()\nchoose which columns\npsyc122/week1"
+  },
+  {
+    "objectID": "more/index.html#glossary-of-commands",
+    "href": "more/index.html#glossary-of-commands",
+    "title": "Additional Content",
+    "section": "",
+    "text": "Command\nDescription\nWeek(s)\n\n\n\n\nfilter()\nFilter rows based on a condition\npsyc121/week2\n\n\nmutate()\nchoose which columns\npsyc122/week1"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Statistics for Psychologists",
+    "section": "",
+    "text": "Warning\n\n\n\nThis website is under construction.\n\n\n\n\n\n\n\n\nWelcome\n\nWelcome to Lancaster University’s Department of Psychology 2023/2024 modules on Statistics for Psychologists. This is your one-stop shop for all the lab materials you need for working with R and statistics.\n\n\n  \n    \n\n    \n      Year 1\n    \n    \n      MSc\n    \n    \n    \n    \n    \n    \n      Year 2\n    \n    \n      More"
+  },
+  {
+    "objectID": "temp/index.html",
+    "href": "temp/index.html",
+    "title": "Statistics for Psychologists",
+    "section": "",
+    "text": "Warning\n\n\n\nThis website is just for Matthew’s testing capacity.\n\n\n\n\nWarning: package 'collapsibleTree' was built under R version 4.2.3\n\n\n  breaks wool tension\n1     26    A       L\n2     30    A       L\n3     54    A       L\n4     25    A       L\n5     70    A       L\n6     52    A       L"
+  }
+]

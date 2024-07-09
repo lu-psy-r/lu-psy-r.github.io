@@ -8,10 +8,6 @@ sidebar: false
 back-to-top-navigation: false
 ---
 
-::: callout-warning
-**This website is under construction.**
-:::
-
 ![](Images/LUPsychology.svg){fig-alt="University Logo" fig-align="center"}
 
 ```{r}
@@ -19,6 +15,14 @@ back-to-top-navigation: false
 
 #this will automate the current year content so it doesn't need manual changing each year
 date <- as.numeric(format(Sys.time(), "%Y"))
+
+# the below runs a check for the month, and willchange over once the academic year begins
+
+month <- as.numeric(format(Sys.time(), "%m"))
+
+if (month >= 10) {
+  date <- as.numeric(format(Sys.time(), "%Y")) + 1
+}
 ```
 
 ::: {.div style="font-size:2em;"}
@@ -34,20 +38,20 @@ Welcome to Lancaster University's Department of Psychology **`r date-1`/`r date`
     <div class="col">
 
     <a href="year1/">
-      <button type="button" class="btn btn-landing btn-lg">Year 1</button>
+      <button type="button" class="btn btn-landing btn-lg year-one">Year 1</button>
     </a>
     <a href="year3/">
-      <button type="button" class="btn btn-landing btn-lg">Year 3</button>
+      <button type="button" class="btn btn-landing btn-lg year-three">Year 3</button>
     </a>
     
     </div>
     <div class="col">
     
     <a href="year2/">
-      <button type="button" class="btn btn-landing btn-lg">Year 2</button>
+      <button type="button" class="btn btn-landing btn-lg year-two">Year 2</button>
     </a>
     <a href="MSc/">
-      <button type="button" class="btn btn-landing btn-lg">MSc</button>
+      <button type="button" class="btn btn-landing btn-lg year-msc">MSc</button>
     </a>
     
     </div>
