@@ -29,7 +29,7 @@ if (month >= 10) {
 Welcome
 :::
 
-Welcome to Lancaster University's Department of Psychology **`r date-1`/`r date`** modules on Statistics for Psychologists. This is your one-stop shop for all the lab materials you need for working with R and statistics.
+Welcome to Lancaster University's Department of Psychology statistics teaching material site! This is your one-stop shop for all of your statistics module across the undergraduate and MSc degrees. 
 
 ```{=html}
 
@@ -63,4 +63,12 @@ Welcome to Lancaster University's Department of Psychology **`r date-1`/`r date`
   </div>
 </div>
 
+
+
 ```
+
+::: {.callout-caution}
+If you explore the site, you may see a caution message on some pages, which states: "This page is under construction for 24/25 and may be subject to change before the teaching week." This means this page has <b>not</b> yet been edited yet for the 24/25 academic year, and may be subject to change following review from lecturers before the teaching week.
+:::
+
+If you are trying to access lab materials from a previous year (e.g. you are in Year 2 now and want to access the materials from your Year 1 labs), use the "Previous content" button at the bottom to navigate to this. However, we would encourage you to use the current materials as much as possible though as they reflect our most up-to-date materials. If you are in Year 3 and trying to access Year 2 material, please do so via moodle.
