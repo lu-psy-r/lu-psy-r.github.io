@@ -2,10 +2,4 @@
 title: "Additional Content"
 ---
 
-## Glossary of Commands
-
-| Command    | Description                      | Week(s)       |
-|------------|----------------------------------|---------------|
-| `filter()` | Filter rows based on a condition | psyc121/week2 |
-| `mutate()` | choose which columns             | psyc122/week1 |
-|            |                                  |               |
+This page is currently under construction.
