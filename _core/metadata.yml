@@ -19,7 +19,7 @@ website:
       #- text: Home
       #  file: index.qmd
       - text: Home
-        file: index.html
+        file: https://lu-psy-r.github.io/
       - text: Year 1
         file: year1/index.html
       - text: Year 2
