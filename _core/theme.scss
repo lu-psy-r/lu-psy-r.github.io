@@ -84,7 +84,8 @@ $navbar-dark-color:                 $red !default;
 $navbar-dark-hover-color:           $red !default;
 $navbar-light-hover-color:          $red !default;
 $navbar-light-active-color:         $red !default;
-
+$navbar-fg:                         $white !default;
+$navbar-hl:                         $white !default;
 // Tooltips
 
 $tooltip-font-size:                 11px !default;
@@ -125,6 +126,19 @@ $alert-border-width:                0 !default;
     }
   }
 }
+
+// For sorting out consistent colours of the navbar
+a.nav-link {
+  color: $gray-300;
+}
+a.nav-link:hover {
+  color: $purple;
+}
+
+a.navbar-brand {
+  color: $gray-300;
+}
+
 
 // Typography
 
@@ -212,4 +226,3 @@ table,
 .list-group {
   font-size: $font-size-sm;
 }
-
