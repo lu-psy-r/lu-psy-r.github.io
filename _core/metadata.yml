@@ -34,15 +34,15 @@ website:
   page-footer:
     left: "Website developed by Matthew Ivory"
     right:       
-      - text: "Previous Content"
+      - text: "<p style='color:#000'>Previous Content</p>"
         href: previous-content/index.html
 
 format:
   html:
     theme: 
-      - default
       - "_core/theme.scss"
-    css: https://lu-psy-r.github.io/essentials/index.css
+      - default
+    #css: https://lu-psy-r.github.io/essentials/index.css
     code-overflow: wrap
     grid:
       sidebar-width: 250px
